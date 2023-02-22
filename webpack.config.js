@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js"
+    filename: "index.js"
   },
   module: {
     rules: [
@@ -19,8 +19,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: ["@babel/plugin-syntax-jsx"]
+            presets: ["@babel/preset-env", "@babel/preset-react"]
           }
         }
       },

@@ -2,17 +2,19 @@
   "name": "ml-application-framework",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "dist2/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "babel": "babel ./node_modules/.bin/babel src --out-dir dist2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.21.0",
     "@babel/core": "^7.20.12",
     "@babel/plugin-syntax-jsx": "^7.18.6",
     "@babel/preset-env": "^7.20.2",
@@ -20,6 +22,7 @@
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
+    "react": "^18.2.0",
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
