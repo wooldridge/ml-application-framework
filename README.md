@@ -10,11 +10,29 @@ npm install
 
 ## Build the library
 
+**Option 1, using webpack:**
+
 ```
 npm run build
 ```
 
-This bundles the code in `/src` into a single `dist/bundle.js` library file.
+This converts and bundles the code in `/src` into a single `/dist/index.js` library file. Set `ml-application-framework/package.json` to point to this:
+
+```
+"main": "dist/index.js",
+```
+
+**Option 2, using babel only:**
+
+```
+npm run babel
+```
+
+This converts and copies the code in `/src` into `/dist2`. Set `ml-application-framework/package.json` to point to this:
+
+```
+"main": "dist2/index.js",
+```
 
 ## Set up example application
 
